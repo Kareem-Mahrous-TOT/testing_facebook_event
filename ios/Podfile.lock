@@ -17,7 +17,7 @@ DEPENDENCIES:
   - Flutter (from `Flutter`)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - FBAEMKit
     - FBAudienceNetwork
     - FBSDKCoreKit
@@ -37,6 +37,6 @@ SPEC CHECKSUMS:
   FBSDKCoreKit_Basics: cd7b5f5d1e8868c26706917919d058999ca672c3
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
 
-PODFILE CHECKSUM: 9805643bada2bbac735f652f8fdaa85133bd6aca
+PODFILE CHECKSUM: 90f49d12374d395df71a3bad81f1c6431dad8f80
 
 COCOAPODS: 1.14.3

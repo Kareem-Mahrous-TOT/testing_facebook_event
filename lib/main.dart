@@ -1,9 +1,11 @@
-import 'package:facebook_app_events/facebook_app_events.dart';
 import 'package:flutter/material.dart';
+
+import 'facebook_app_events.dart';
 
 void main() {
   runApp(const MyApp());
 }
+//add
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -28,10 +30,10 @@ class MyApp extends StatelessWidget {
                 },
               ),
               MaterialButton(
-                child: const Text("Click me!"),
+                child: const Text("new_Button!"),
                 onPressed: () {
                   facebookAppEvents.logEvent(
-                    name: 'button_clicked',
+                    name: 'new_button',
                     parameters: {
                       'button_id': 'the_clickme_button',
                     },
@@ -58,6 +60,14 @@ class MyApp extends StatelessWidget {
                     type: 'product',
                     price: 99.0,
                     currency: 'TRY',
+
+                  );
+                   facebookAppEvents.logEvent(
+                    name: 'logAddToCart',
+                    parameters: {
+                      "Authorization":"Bearer eyaASesioacszxsoghkoGGG5534",
+                      'button_id': 'logAddToCartTestButton',
+                    },
                   );
                 },
               ),
@@ -65,6 +75,7 @@ class MyApp extends StatelessWidget {
                 child: const Text("Test purchase!"),
                 onPressed: () {
                   facebookAppEvents.logPurchase(amount: 1, currency: "USD");
+                  facebookAppEvents.logSubscribe(orderId: "KTest",);
                 },
               ),
               MaterialButton(

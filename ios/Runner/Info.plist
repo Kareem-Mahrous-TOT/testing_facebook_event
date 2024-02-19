@@ -54,7 +54,7 @@
 		<key>FacebookAppID</key>
 		<string>726965089529973</string>
 		<key>FacebookDisplayName</key>
-		<string>flutter_application_1</string>
+		<string>dummy_pos_test</string>
 		<key>CADisableMinimumFrameDurationOnPhone</key>
 		<true />
 		<key>UIApplicationSupportsIndirectInputEvents</key>
